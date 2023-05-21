@@ -1,0 +1,35 @@
+==  1: fetch miss(L1_i), read miss(L2), write miss(L2), write miss(L1_i)
+==  2: fetch hit(L1_i)
+==  3: fetch hit(L1_i)
+
+
+==  4: write miss(L1_data), write miss(L2)
+==  5: write hit(L1_data),  write hit(L2)
+==  6: write miss(L1_data), write miss(L2)
+==  7: write miss(L1_data), write miss(L2)
+==  8: write miss(L1_data), write miss(L2)
+==  9: write miss(L1_data), write miss(L2) 
+==  10: write miss(L1_data),write miss(L2) 
+==  11: write hit(L1_data), write hit(L2)
+
+
+==  11: read miss(L1_d), read miss(L2), write miss(L2), write miss(L1_i)
+==  12: read hit(L1_d)
+
+->     fetch = 2 hits, 4 misses
+->     write = 4 hits, 8 misses
+->     read  = 1 hit,  3 misses 
+
+I  04000c70,2
+I  04000c70,2
+I  04000c70,2
+ S feb83d74,4
+ S feb83d74,4
+ S e6b03d74,4
+ S e7b53d74,4
+ S e7b5fd74,4
+ S ffbffd74,4
+ S feb83d74,4
+ S ffbffd74,4
+ L 04026f44,4
+ L 04026f44,4

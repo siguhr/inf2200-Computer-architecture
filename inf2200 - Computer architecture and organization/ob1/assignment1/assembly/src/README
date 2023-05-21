@@ -1,0 +1,32 @@
+To compile the program you need these files:
+
+asm.S - Assembly part of the mrg2 function
+main.c - The full mergesort program which also supports the assembly script
+asmdef.h - Define the assembly function
+
+Optional:
+the folder contains another assembly script which is a bit larger. 
+To use this file just rename it as asm.S and move it to the main folder with the previous files.
+
+Makefile - Used for compiling the code
+
+To compile with the terminal go to the corresponding directory and type in:
+
+make program
+
+That compiles the program, to run it type in:
+
+./program assembly
+or
+./program c
+
+The difference is what languange should be compiled.
+
+to clean up after compiling:
+
+make clean
+
+To profile last run, type in:
+
+gprof -p -b program gmon.out > analysis.txt
+

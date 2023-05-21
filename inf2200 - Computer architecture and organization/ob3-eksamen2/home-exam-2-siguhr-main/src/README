@@ -1,0 +1,46 @@
+##############################################################################                    
+                          
+                            INF-2200-exam1
+                             Sigurd Uhre
+                            December 2021
+
+Compile cpu.c by typing "make" in the terminal
+There are two logfiles, logfile2 create the correctness test trace-file.
+logfile create the benchmark trace-file.
+ 
+Creat two tracefiles by writing "python3 traceconverter.py" in the terminal  
+trace.tr is the benchmark file. trace2.tr is the correctness test trace file. 
+
+The compiled simulater "cachesim" takes 11 arguments:
+
+1: trace:                       name of trace-file
+
+2:  L1_inst_cache_size           cache size (kilobytes)
+3:  L1_inst_block_size           block size (bytes)
+4:  L1_inst_aassociativity       2 - 4 - 8 - 16 - way associativity
+
+5:  L1_data_cache_size           cache size (kilobytes)
+6:  L1_data_block_size           block size (bytes)
+7:  L1_data_aassociativity       2 - 4 - 8 - 16 - way associativity
+
+8:  L3_unif_cache_size           cache size (kilobytes)
+9:  L2_unif_block_size           block size (bytes)
+10: L2_unif_aassociativity       2 - 4 - 8 - 16 - way associativity
+
+11: write-policy                 1 = write-through. 2 = write-back   
+
+Example how to run the simulater after generating trace files
+with initial parameters:
+
+run test trace:
+./cachesim trace2.tr 32 64 4 32 64 8 256 64 8 1
+
+run benchmark trace with write-through policy:
+./cachesim trace.tr 32 64 4 32 64 8 256 64 8 1
+
+run benchmark trace with write-back policy:
+./cachesim trace.tr 32 64 4 32 64 8 256 64 8 2
+
+All parameters can be changed directly in the terminal. 
+
+##############################################################################

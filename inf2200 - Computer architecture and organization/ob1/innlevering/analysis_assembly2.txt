@@ -1,0 +1,15 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 28.57      0.34     0.34                             CONDITION_TWO
+ 27.73      0.67     0.33                             CONDITION_ONE
+ 25.21      0.97     0.30  4999995     0.00     0.00  merge
+  6.72      1.05     0.08                             START_OF_LOOP
+  5.04      1.11     0.06       10     6.00     6.00  printArray
+  1.68      1.13     0.02        5     4.00     4.00  CreateArray
+  1.68      1.15     0.02        5     4.00    64.00  mergeSort
+  1.68      1.17     0.02                             END
+  0.84      1.18     0.01  4999995     0.00     0.00  mrg3
+  0.84      1.19     0.01                             asm_function

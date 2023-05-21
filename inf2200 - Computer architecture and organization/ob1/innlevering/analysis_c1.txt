@@ -1,0 +1,12 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 65.85      0.81     0.81  4999995     0.00     0.00  c_function
+ 26.02      1.13     0.32  4999995     0.00     0.00  merge
+  5.69      1.20     0.07       10     7.00     7.00  printArray
+  0.81      1.21     0.01        5     2.00     2.00  CreateArray
+  0.81      1.22     0.01        5     2.00   228.00  mergeSort
+  0.81      1.23     0.01                             __x86.get_pc_thunk.bx
+  0.00      1.23     0.00  4999995     0.00     0.00  mrg3
